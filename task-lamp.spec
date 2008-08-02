@@ -1,6 +1,6 @@
 %define name	task-lamp
 %define version	2008
-%define release %mkrel 4
+%define release %mkrel 5
 
 Name: %{name}
 Version: %{version}
