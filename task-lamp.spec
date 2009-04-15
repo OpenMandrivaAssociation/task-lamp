@@ -1,6 +1,6 @@
 %define name	task-lamp
-%define version	2009.0
-%define release %mkrel 2
+%define version	2009.1
+%define release %mkrel 1
 
 Name: %{name}
 Version: %{version}
@@ -12,7 +12,8 @@ Requires: task-lamp-php
 Requires: task-lamp-perl
 Requires: task-lamp-python
 Requires: phpmyadmin
-Requires: proftpd
+Requires: mysql
+Suggests: task-lamp-extras
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
@@ -28,6 +29,7 @@ Summary: Metapackage for the Linux, Apache, MySQL, PHP server
 Group: System/Servers
 License: GPL
 Requires: apache-base
+Suggests: apache-mpm-prefork
 Requires: apache-mod_php
 Requires: freetype
 Requires: php-mysql
@@ -42,6 +44,8 @@ Requires: php-mcrypt
 Requires: php-gd
 Requires: php-mhash
 Requires: php-sqlite
+Suggests: mysql
+Suggests: phpmyadmin
 
 %description php
 This package is a meta-package, meaning that its purpose is to contain
@@ -55,6 +59,7 @@ Requires: apache-base
 Requires: apache-mod_perl
 Requires: perl-DBD-mysql
 #Requires: perl-DBD-SQLite2 ??
+Suggests: mysql
 
 %description perl
 This package is a meta-package, meaning that its purpose is to contain
@@ -68,10 +73,25 @@ Requires: apache-base
 Requires: apache-mod_python
 Requires: python-mysql
 Requires: python-sqlite
+Suggests: mysql
 
 %description python
 This package is a meta-package, meaning that its purpose is to contain
 dependencies for running LAMP (Python) server
+
+%package extras
+Summary: Metapackage for the Linux, Apache, MySQL, PHP/Perl/Python extras
+Group: System/Servers
+License: GPL
+Requires: apache-mod_userdir
+Requires: apache-mod_dav
+Suggests: proftpd
+
+%description extras
+This package is a meta-package, meaning that its purpose is to add additional
+packages for a LAMP setup that are not strictly required, but are often provided
+in other similar bundles. These extra packages are usually a convenience, and not
+recommended for use on production servers without securing them.
 
 %files
 
@@ -81,3 +101,4 @@ dependencies for running LAMP (Python) server
 
 %files python
 
+%files extras
