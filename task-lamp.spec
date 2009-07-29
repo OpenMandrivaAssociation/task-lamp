@@ -1,6 +1,6 @@
 %define name	task-lamp
 %define version	2009.1
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: %{name}
 Version: %{version}
@@ -36,14 +36,12 @@ Requires: php-mysql
 Requires: php-pear
 Requires: php-gettext
 Requires: php-xml
-Requires: php-ming
 Requires: php-sqlite
 Requires: php-imap
 Requires: php-eaccelerator-admin
 Requires: php-mcrypt
 Requires: php-gd
-Requires: php-mhash
-Requires: php-sqlite
+Requires: php-sqlite3
 Suggests: mysql
 Suggests: phpmyadmin
 
