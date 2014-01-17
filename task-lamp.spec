@@ -1,5 +1,5 @@
 Name:		task-lamp
-Version:	2012.1
+Version:	%distro_release
 Release:	1
 Summary:	Metapackage for the Linux, Apache, MySQL, PHP and Perl server
 Group:		System/Servers
