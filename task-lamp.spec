@@ -24,6 +24,7 @@ License:	GPL
 Requires:	apache-base
 Suggests:	apache-mpm-prefork
 Requires:	apache-mod_php
+Requires:	apache-mod_access_compat
 Requires:	freetype
 Requires:	php-mysql
 Requires:	php-pear
