@@ -1,6 +1,6 @@
 Name:		task-lamp
 Version:	%distro_release
-Release:	2
+Release:	3
 Summary:	Metapackage for the Linux, Apache, MySQL, PHP and Perl server
 Group:		System/Servers
 License:	GPL
