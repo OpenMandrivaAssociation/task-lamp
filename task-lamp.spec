@@ -1,6 +1,6 @@
 Name:		task-lamp
 Version:	%distro_release
-Release:	3
+Release:	4
 Summary:	Metapackage for the Linux, Apache, MySQL, PHP and Perl server
 Group:		System/Servers
 License:	GPL
@@ -26,12 +26,11 @@ Suggests:	apache-mpm-prefork
 Requires:	apache-mod_php
 Requires:	apache-mod_access_compat
 Requires:	freetype
-Requires:	php-mysql
+Requires:	php-mysqli
 Requires:	php-pear
 Requires:	php-gettext
 Requires:	php-xml
 Requires:	php-imap
-Requires:	php-eaccelerator-admin
 Requires:	php-mcrypt
 Requires:	php-gd
 Requires:	php-sqlite3
